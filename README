@@ -1,0 +1,11 @@
+Replifuck - A brainfuck derivative for self-replicating programs
+
+In fact this is a very special brainfuck:
+ 1) Multithreading: This brainfuck VM is able to execute programs in parallel
+ 2) Von-Neumann model: Code and data is put into same memory
+ 3) Stack: Threads have a stack pointer and data can be pushed ('^') or popped ('V')
+ 3) Memory is simulated to be endless
+
+Futher notes:
+ - Since memory is endless, the command '*' is used as termination command.
+ - Memory is initialized with random values, not 0
